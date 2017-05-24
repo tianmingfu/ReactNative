@@ -13,6 +13,8 @@ class RNHighScores extends React.Component {
     var contents = this.props["scores"].map(
       score => <Text key={score.name}>{score.name}:{score.value}{"\n"}</Text>
     );
+
+    
     return (
       <View style={styles.container}>
         <Text style={styles.highScoresTitle}>
